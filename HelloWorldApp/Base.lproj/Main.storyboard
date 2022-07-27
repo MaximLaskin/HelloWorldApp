@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorldApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPh-OD-Lp7">
-                                <rect key="frame" x="20" y="62" width="374" height="362"/>
+                                <rect key="frame" x="20" y="62" width="388" height="377"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gray" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJH-2H-mv4">
-                                        <rect key="frame" x="149.5" y="158.5" width="75.5" height="45"/>
+                                        <rect key="frame" x="152" y="166" width="84" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="3il-58-p3E"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -28,15 +31,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
-                                    <constraint firstItem="QJH-2H-mv4" firstAttribute="centerX" secondItem="lPh-OD-Lp7" secondAttribute="centerX" id="3Ya-XV-tU0"/>
-                                    <constraint firstItem="QJH-2H-mv4" firstAttribute="centerY" secondItem="lPh-OD-Lp7" secondAttribute="centerY" id="NQQ-qQ-Gmm"/>
+                                    <constraint firstItem="QJH-2H-mv4" firstAttribute="centerX" secondItem="lPh-OD-Lp7" secondAttribute="centerX" id="JfN-8Q-Tg9"/>
+                                    <constraint firstItem="QJH-2H-mv4" firstAttribute="centerY" secondItem="lPh-OD-Lp7" secondAttribute="centerY" id="O8G-Sa-9xR"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNs-pc-irm">
-                                <rect key="frame" x="20" y="462" width="374" height="362"/>
+                                <rect key="frame" x="20" y="477" width="388" height="377"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igp-b5-rIv">
-                                        <rect key="frame" x="155.5" y="158.5" width="63" height="45"/>
+                                        <rect key="frame" x="162.66666666666666" y="166" width="63" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -52,20 +55,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sNs-pc-irm" secondAttribute="bottom" constant="38" id="2JS-A0-l35"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPh-OD-Lp7" secondAttribute="trailing" constant="20" id="H8h-NK-Oci"/>
-                            <constraint firstItem="sNs-pc-irm" firstAttribute="top" secondItem="lPh-OD-Lp7" secondAttribute="bottom" constant="38" id="IET-af-xgq"/>
-                            <constraint firstItem="sNs-pc-irm" firstAttribute="height" secondItem="lPh-OD-Lp7" secondAttribute="height" id="IHq-n8-S4k"/>
-                            <constraint firstItem="lPh-OD-Lp7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="K6a-yb-zuR"/>
-                            <constraint firstItem="lPh-OD-Lp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LFa-ba-uMQ"/>
-                            <constraint firstItem="sNs-pc-irm" firstAttribute="leading" secondItem="lPh-OD-Lp7" secondAttribute="leading" id="Uim-Fn-Zkt"/>
-                            <constraint firstItem="sNs-pc-irm" firstAttribute="width" secondItem="lPh-OD-Lp7" secondAttribute="width" id="ymU-y7-rLI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sNs-pc-irm" secondAttribute="trailing" constant="20" id="0e7-sP-u3Z"/>
+                            <constraint firstItem="sNs-pc-irm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1cb-Qo-ttF"/>
+                            <constraint firstItem="lPh-OD-Lp7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="47K-lz-6ww"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sNs-pc-irm" secondAttribute="bottom" constant="38" id="4I9-Vs-7Th"/>
+                            <constraint firstItem="sNs-pc-irm" firstAttribute="height" secondItem="lPh-OD-Lp7" secondAttribute="height" id="4pG-LQ-pm4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPh-OD-Lp7" secondAttribute="trailing" constant="20" id="RyB-Px-Swb"/>
+                            <constraint firstItem="sNs-pc-irm" firstAttribute="top" secondItem="lPh-OD-Lp7" secondAttribute="bottom" constant="38" id="V0p-sd-L16"/>
+                            <constraint firstItem="lPh-OD-Lp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mRX-TU-fgv"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="80.357142857142847"/>
+            <point key="canvasLocation" x="33.644859813084111" y="79.697624190064801"/>
         </scene>
     </scenes>
     <resources>
